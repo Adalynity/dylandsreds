@@ -12,21 +12,17 @@
   
   }
   body{
-    text-align: center;
     background-color: #E7E7E7;
+    text-align: center;
   }
   nav {
-    position: relative;
+    position: flex;
     height: 200px;
     background: #E7E7E7;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
-    width: 1632.1px;
-    left: 225px;
-    top: -205px;
-    margin-bottom: -200px;
+    text-align: center;
   }
   
   nav a {
@@ -36,6 +32,7 @@
     padding: 5px;
     margin-left: 75px;
     font-size: 35px;
+    left: 200px;
   }
   
   nav a:hover {
@@ -67,29 +64,6 @@
     line-height: 1.5;
   }
   
-  button {
-    padding: 10px 20px;
-    color: #E7E7E7;
-    font-size: 15px;
-    border: black solid 1px;
-    background: #B90125;
-    cursor: pointer;
-    border-radius: 50px;
-  }
-
-  
-  
-  button:hover {
-    background: #fff;
-    color: #000;
-  }
-  
-  .column-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 2rem;
-  }
   .logo{
     float: left;
   }
@@ -100,67 +74,21 @@
     height: 200px;
     left: 0;
   }
-  .row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    margin-bottom: 10px;
-  }
-  
-  .price {
-    color: rgb(0, 0, 0);
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: rgb(255, 255, 255);
-    background-color: #B90125;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
+    .aboutcontainer{
+    border: black solid;
+    border-width: 5px;
 
-
-
-  .container {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 10px;
-      margin: 0 auto;
-      padding: 10px;
-      max-width: 1100px;
+}
+  .aboutus{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
   }
-
-  aside,
-  main {
-    border: 2px solid rgb(0, 0, 0);
-      padding: 10px;
+  .aboutimg{
+    align-items: center;
   }
-
-  .cards {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-  }
-
-  .card {
-      text-align: center;
+  .aboutusmobile{
+    display: none;
   }
 
   /* Footer */
@@ -169,7 +97,7 @@
     width: 100%;
     background: #B90125;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 20px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,40 +189,15 @@
   
   }
   @media screen and (max-width: 483px) {
- 
-    .book{
-      position: absolute;
-      top: 300px;
-    }
-    .navbar { 
-      position: flex;
-      text-align: center;
-    }
-    .map{
-      width:458px; 
-      height: 450px;
-    }
-    .book{
-      display: none;
-    }
-    
-    .introImg{
-      display: none;
-    }
-    .aboutUsText{
-      position: flex;
-    }
     .navbar{
       max-width: 100px;
-      text-align: left;
-      
+      text-align: center;
+      padding-right: 1200px;
     }
-    .nav{
-      width:100px;
-    }
-    .aboutusmobile{
-      padding-right:500px;
-      font-size: large;
+    .aboutimg{
+      width: 100%;
     }
   }
+
+ 
   

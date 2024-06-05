@@ -1,0 +1,498 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  
+  }
+  body{
+    text-align: center;
+  }
+  nav {
+    position: relative;
+    height: 200px;
+    background: #E7E7E7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center
+  }
+  
+  nav a {
+    position: flex;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    margin-left: 75px;
+    font-size: 35px;
+  }
+  
+  nav a:hover {
+    transition: 1s;
+    color: #fff;
+    border-radius: 75%;
+    border: solid red;
+    background-color: red;
+    
+  }
+  
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+  }
+  
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+  }
+  .logo{
+    float: left;
+  }
+  .logo img{
+    position: relative;
+    padding-left: 0px;
+    width: 225px;
+    height: 200px;
+    left: 0;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #B90125;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+
+  .container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 10px;
+      margin: 0 auto;
+      padding: 10px;
+      max-width: 1100px;
+      min-height: 100vh;
+  }
+
+  aside,
+  main {
+      border: 1px solid grey;
+      padding: 10px;
+  }
+
+  .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+  }
+
+  .card {
+      text-align: center;
+  }
+
+  
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #B90125;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    position:relative;
+    color: #fff;
+    margin: 20px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    top: px;
+    bottom: 30p;
+  }
+    
+    @keyframes animateWaves {
+      0% {
+        background-position-x: 1000px;
+      }
+      100% {
+        background-positon-x: 0px;
+      }
+    }
+    
+    @keyframes animate {
+      0% {
+        background-position-x: -1000px;
+      }
+      100% {
+        background-positon-x: 0px;
+      }
+    }
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+    .book{
+      position: absolute;
+      top: 300px;
+    }
+
+    .row{
+        width:600px;;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }
+  @media (min-width: 2000px) and (max-width: 2560px){
+  
+  }
+  .box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    top: 60 px;
+    position:relative ;
+
+
+  }
+  /* styles.css */
+
+/* General styling for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 15px auto;
+}
+
+/* Calendar container */
+.container-calendar {
+  background: #ffffff;
+  padding: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Event section styling */
+#event-section {
+  padding: 10px;
+  background: #f5f5f5;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+.container-calendar #left h1 {
+  color: #B90125;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#event-section h3 {
+  color: #B90125;
+  font-size: 18px;
+  margin: 0;
+}
+
+#event-section input[type="date"],
+#event-section input[type="text"] {
+  margin: 10px 0;
+  padding: 5px;
+  width: 80%;
+}
+
+#event-section button {
+  background: #B90125;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.event-marker {
+  position: relative;
+}
+
+.event-marker::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* event tooltip styling */
+.event-tooltip {
+  position: absolute;
+  background-color: rgba(234, 232, 232, 0.763);
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.event-marker:hover .event-tooltip {
+  display: block;
+}
+
+/* Reminder section styling */
+#reminder-section {
+  padding: 10px;
+  background: #f5f5f5;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+
+#reminder-section h3 {
+  color: #B90125;
+  font-size: 18px;
+  margin: 0;
+}
+
+#reminderList {
+  list-style: none;
+  padding: 0;
+}
+
+#reminderList li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Style for the delete buttons */
+.delete-event {
+  background: rgb(8, 3, 3);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  align-items: left;
+}
+
+/* Buttons in the calendar */
+.button-container-calendar button {
+  cursor: pointer;
+  background: #B90125;
+  color: #fff;
+  border: 1px solid #B90125;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* Calendar table */
+.table-calendar {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-calendar td,
+.table-calendar th {
+  padding: 5px;
+  border: 1px solid #e2e2e2;
+  text-align: center;
+  vertical-align: top;
+  left:30px
+}
+
+/* Date picker */
+.date-picker.selected {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  outline: 1px dashed #00BCD4;
+}
+
+.date-picker.selected span {
+  border-bottom: 2px solid currentColor;
+}
+
+/* Day-specific styling */
+.date-picker:nth-child(1) {
+  color: red;
+  /* Sunday */
+}
+
+.date-picker:nth-child(6) {
+  color: #B90125;
+  /* Friday */
+}
+
+/* Hover effect for date cells */
+.date-picker:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+/* Header for month and year */
+#monthAndYear {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Navigation buttons */
+.button-container-calendar {
+  position: relative;
+  margin-bottom: 1em;
+  overflow: hidden;
+  clear: both;
+}
+
+#previous {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+/* Footer styling */
+.footer-container-calendar {
+  margin-top: 1em;
+  border-top: 1px solid #dadada;
+  padding: 10px 0;
+}
+
+.footer-container-calendar select {
+  cursor: pointer;
+  background: #ffffff;
+  color: #ff0101;
+  border: 1px solid #bfc5c5;
+  border-radius: 3px;
+  padding: 5px 1em;
+}
+.dropdown{
+  
+  width: 70%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  
+}
