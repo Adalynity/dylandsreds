@@ -17,7 +17,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0rem calc((100vw - 1300px) / 2);
-  width: 1660px;
+  width: 1632.1px;
   left: 225px;
   top: -205px;
 }
@@ -104,7 +104,7 @@ button:hover {
   position: absolute;
   display: flex;
   height: 650px;
-  width: 900px;
+  width: 875px;
   margin-left: 982px;
   margin-top: -654px;
   background-color: #B90125;
