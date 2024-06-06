@@ -14,6 +14,9 @@ body, html{
 body{
   background-color: #E7E7E7;
 }
+.AboutUsContainer{
+  top: -210px;
+}
 nav {
   position: relative;
   height: 200px;
@@ -97,6 +100,7 @@ button:hover {
   
 }
 .introImg{
+  position: relative;
   width: 100%;
 }
 .AboutUsContainer{
@@ -250,8 +254,7 @@ button:hover {
 @media screen and (max-width: 483px) {
  
   .book{
-    position: absolute;
-    top: 300px;
+    display: none;
   }
   .navbar { 
     position: flex;
@@ -261,28 +264,31 @@ button:hover {
     width:458px; 
     height: 450px;
   }
-  .book{
-    display: none;
-  }
   
   .introImg{
     display: none;
   }
-  .aboutUsText{
+  .AboutUsContainer{
     position: flex;
+    padding-top: 20px;
   }
   .navbar{
     max-width: 100px;
-    text-align: left;
+    text-align: center;
+    left: 20px;
     
   }
   .nav{
     width:100px;
+    
   }
   .aboutusmobile{
     padding-right:500px;
     font-size: large;
     display:block;
+  }
+  .logo img{
+    width: 100%;
   }
   
 }

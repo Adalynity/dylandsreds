@@ -6,9 +6,15 @@
       'Lucida Sans', Arial, sans-serif;
   
   }
-  body{
+  body, html{
     text-align: center;
+    overflow-x:hidden;
   }
+  body{
+    background-color: #E7E7E7;
+  }
+
+
   nav {
     position: relative;
     height: 200px;
@@ -73,11 +79,11 @@
   }
   
   .footer {
-    position: relative;
+    position: flex;
     width: 100%;
     background: #B90125;
     min-height: 100px;
-    padding: 20px 50px;
+    padding: 30px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,43 +137,9 @@
     margin: 20px 0 10px 0;
     font-size: 1rem;
     font-weight: 300;
-    top: px;
     bottom: 30p;
   }
-    
-    @keyframes animateWaves {
-      0% {
-        background-position-x: 1000px;
-      }
-      100% {
-        background-positon-x: 0px;
-      }
-    }
-    
-    @keyframes animate {
-      0% {
-        background-position-x: -1000px;
-      }
-      100% {
-        background-positon-x: 0px;
-      }
-    }
-  @media screen and (max-width: 768px) {
-    .hero-container {
-      grid-template-columns: 1fr;
-    }
-    .book{
-      position: absolute;
-      top: 300px;
-    }
-
-    .row{
-        width:600px;;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-  }
+  
   @media (min-width: 2000px) and (max-width: 2560px){
   
   }
@@ -185,15 +157,11 @@
   /* styles.css */
 
 /* General styling for the entire page */
-body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  margin: 0;
-}
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 500px;
   margin: 15px auto;
+  padding-bottom: 231px;
 }
 
 /* Calendar container */
